@@ -48,7 +48,9 @@ function updatePlayIcon() {
 function updateProgress() {
   progress.value = (video.currentTime / video.duration) * 100;
 
-  timestamp.innerText = `${formatTime(video.currentTime)}`;
+  timestamp.innerText = `${formatTime(video.currentTime)}/${formatTime(
+    video.duration
+  )}`;
 }
 
 //Stop video
